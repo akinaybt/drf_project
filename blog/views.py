@@ -4,13 +4,6 @@ from rest_framework.decorators import api_view
 from .models import News
 
 
-@api_view(['GET'])
-def my_api_view(request):
-    data = {
-        'text': 'Hello world !'
-    }
-    return Response(data)
-
 
 @api_view(['POST'])
 def news_update_view(request, id):
